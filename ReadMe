@@ -1,0 +1,21 @@
+Breast Cancer Analysis
+Purpose of the Analysis
+The purpose of this project is to build a machine learning model to predict whether a tumor is malignant or benign based on the features provided in the Breast Cancer Wisconsin (Diagnostic) Dataset. This analysis is conducted using Python, focusing on data cleaning, model training, and evaluation. While this specific dataset comes from healthcare, the process of data cleaning and modeling can be applied to other sectors, such as finance, marketing, and public health, to help in predictive analytics and decision-making.
+
+Steps Followed
+1. Data Cleaning:
+Removed unnecessary columns, such as the 'id' column, which doesn't contribute to prediction.
+Handled missing values by analyzing and dropping any empty or irrelevant columns, like Unnamed: 32.
+Converted the categorical 'diagnosis' column into a numeric form (0 for benign and 1 for malignant) using one-hot encoding.
+Scaled the numerical features to ensure consistent ranges using the StandardScaler.
+2. Modeling:
+Logistic Regression Model: First, a Logistic Regression model was trained on the cleaned and scaled data.
+Random Forest Classifier & Support Vector Machine (SVM) were also explored to compare model performance.
+3. Results:
+The Logistic Regression model achieved an accuracy of 97.37%.
+Random Forest and SVM also showed strong performances, but Logistic Regression was the best in terms of accuracy.
+Key metrics such as precision, recall, and F1-score were also calculated to evaluate the model's performance:
+Precision: 0.98 (malignant), 0.97 (benign)
+Recall: 0.95 (malignant), 0.99 (benign)
+F1-Score: 0.96 (malignant), 0.98 (benign)
+The final Logistic Regression model was saved as a .pkl file for future use.
